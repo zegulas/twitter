@@ -1,0 +1,61 @@
+# Logs
+**/logs
+**/*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+
+# Node modules
+**/node_modules/
+
+# Build outputs
+/backend/dist/
+/frontend/build/
+/frontend/dist/
+
+/# Runtime files
+**/pids
+**/*.pid
+**/*.seed
+**/*.pid.lock
+
+# Environment files
+**/.env
+**/.env.test
+**/.env.*.local
+**/.env.local
+**/.env.test.local
+**/.env.production.local
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.vscode/
+.idea/
+
+# Test coverage
+**/coverage/
+
+# Optional npm cache
+**/.npm/
+
+# Next.js (in case used)
+**/.next/
+
+# React specific
+/frontend/.cache/
+frontend/public/static/
+
+# Docker artifacts
+**/docker-compose.override.yml
+**/docker-compose.dev.yml
+**/*.local.yml
+
+# Misc
+**/.eslintcache
+**/package-lock.json
+**/yarn.lock
+**/pnpm-lock.yaml
