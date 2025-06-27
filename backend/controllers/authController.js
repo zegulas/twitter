@@ -18,7 +18,7 @@ async function signup(req, res, db) {
 
         return res.status(201).json({ user: result.rows[0] });
     } catch (err) {
-        // console.error('Error signing up user:', err);
+        console.error('Error signing up user:', err);
         if (err.code === '23505') {
             return res.status(409).json({ error: 'Username or email already exists' });
         }
@@ -63,7 +63,7 @@ async function login(req, res, db) {
             message: 'Login successful'
         })
     } catch (err) {
-        // console.error('Error logging in user:', err);
+        console.error('Error logging in user:', err);
         return res.status(500).json({ error: 'Server error' });
     }
 }
